@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 BRANCH=$(echo $CODEBUILD_BADGE_URL | cut -d '=' -f 3)
 
 echo "Check for branches"

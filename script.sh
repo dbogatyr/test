@@ -1,5 +1,6 @@
 #!/bin/bash
 
+
 cat > destfile <<-EOF
 module.exports = {
   apps : [{
@@ -11,3 +12,4 @@ module.exports = {
   }]
 }
 EOF
+echo "export this.$RC_SQL_USERNAME_LOCAL" >> destfile

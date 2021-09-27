@@ -4,8 +4,3 @@ files:
   - source: /
     destination: /tmp/test_secret
     overwrite: true
-
-hooks:  
-  AfterInstall:
-    - location: script.sh
-      runas: root

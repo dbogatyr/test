@@ -7,7 +7,7 @@ module.exports = {
     name   : "app",
     script : "dist/app.js",
     env_prod: {
-       RC_SQL_USERNAME_LOCALRODUCTION: "this.RC_SQL_USERNAME_LOCALRODUCTION"
+       RC_SQL_USERNAME_LOCAL: "this.$RC_SQL_USERNAME_LOCAL"
     },
   }]
 }

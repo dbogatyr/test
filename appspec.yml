@@ -7,5 +7,5 @@ files:
 
 hooks:  
   AfterInstall:
-    - location: /tmp/test_secret/script.sh
+    - location: script.sh
       runas: root

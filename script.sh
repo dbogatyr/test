@@ -4,7 +4,7 @@
 BRANCH=$(echo $CODEBUILD_BADGE_URL | cut -d '=' -f 3)
 
 echo "Check for branches"
-if [[ $BRANCH == 'main' ]]
+if [[ $BRANCH_NAME == 'main' ]]
 then
 
 echo "Creating prod ecosystem.config.js"
@@ -31,7 +31,7 @@ module.exports = {
 EOF
 echo "Done successfully"
 
-elif [[ $BRANCH == 'demo' ]]
+elif [[ $BRANCH_NAME == 'demo' ]]
 then
 
 echo "Creating demo ecosystem.config.js"
@@ -56,7 +56,7 @@ module.exports = {
 EOF
 echo "Done successfully"
 
-elif [[ $BRANCH == 'staging' ]]
+elif [[ $BRANCH_NAME == 'staging' ]]
 then
 
 echo "Creating staging ecosystem.config.js"
@@ -81,7 +81,7 @@ module.exports = {
 EOF
 echo "Done successfully"
 
-elif [[ $BRANCH == 'develop' ]]
+elif [[ $BRANCH_NAME == 'develop' ]]
 then
 
 echo "Creating develop ecosystem.config.js"

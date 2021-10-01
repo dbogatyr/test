@@ -2,10 +2,5 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /tmp/test_secret
+    destination: /home/ubuntu/
     overwrite: true
-
-hooks:  
-  AfterInstall:
-    - location: script.sh
-      runas: root
